@@ -114,6 +114,31 @@
    vertical-align: left;;
  }
 
+.changeBtn{
+  /*display: table-cell;*/
+}
+#charactersListDiv{
+  display: inline-block;
+  margin-left: 20px;
+}
+#imgName{
+  /*display: table-row;*/
+  /*display: table-cell;*/
+}
+#inputName{
+  /*display: table-cell;*/
+}
+#nameChangeBox{
+}
+#originalName{
+  font-size: 28px;
+}
+#newName{
+  font-size: 28px;
+}
+#changedName{
+  font-size: 28px;
+}
  .sideNav {
    float: left;
    color: black;
@@ -355,7 +380,11 @@
   padding: 20px;
 }
 #addStoryBtn{
-  margin-left: 50px;
+  /*margin-left: 50px;*/
+  /*float: right;*/
+  height: 100px;;
+  width: 300px;
+  margin-right: 100px;
 }
 /*--------------------------------customize word         --------------------------------*/
 
@@ -528,4 +557,21 @@
 
 #adminEditBtn {
   float: right;
+}
+
+@keyframes blinker {
+  75% { opacity: 0.0; }
+}
+
+#badWordTextPopupOne {
+  animation: blinker 0.80s linear infinite;
+  font-weight: bold;
+  text-align: center;
+  font-size: 22px;
+  color: red;
+}
+
+#badWordTextPopupTwo {
+  font-weight: bold;
+  text-align: center;
 }
